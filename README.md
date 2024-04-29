@@ -16,7 +16,7 @@ Follow these steps to set up the environment:
 3. **Change Directory**
    - Change the directory to the Docker folder within the cloned repository:
      ```bash
-     cd my_repo/Docker/
+     cd PokemonBattles/Docker/
      ```
 
 4. **Start Docker Container**
