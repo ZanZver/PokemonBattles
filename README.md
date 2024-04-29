@@ -10,7 +10,7 @@ Follow these steps to set up the environment:
 2. **Download the Git Repository**
    - Open your terminal and execute the following command to clone the repository:
      ```bash
-     git clone https://github.com/User/my_repo.git
+     git clone https://github.com/ZanZver/PokemonBattles.git
      ```
 
 3. **Change Directory**
@@ -20,7 +20,7 @@ Follow these steps to set up the environment:
      ```
 
 4. **Start Docker Container**
-   - With Docker running, start a container using Docker Compose:
+   - With Docker running, start a container using Docker Compose. Note that this can take 7 min.
      ```bash
      docker compose up -d
      ```
