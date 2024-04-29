@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  jupyter:
+    image: quay.io/jupyter/pyspark-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../Code/:/home/jovyan/Code/
+      - ../Data/:/home/jovyan/Data/
+      - ../Settings/:/home/jovyan/Settings/
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=password
+    container_name: jupyter
