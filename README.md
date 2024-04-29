@@ -20,13 +20,13 @@ Follow these steps to set up the environment:
      ```
 
 4. **Start Docker Container**
-   - With Docker running, start a container using Docker Compose. Note that this can take 7 min.
+   - With Docker running, start a container using Docker Compose. Note that this can take 7 min. Once done (will see *Running 2/2* in the terminal), terminal can be closed.
      ```bash
      docker compose up -d
      ```
 
 5. **Access the Application**
-   - Open a web browser and navigate to `localhost:8888`.
+   - Open a web browser and navigate to [localhost:8888](localhost:8888).
 
 6. **Log In**
    - For the password, type `password`.
@@ -36,3 +36,6 @@ Follow these steps to set up the environment:
 
 8. **Run Code Blocks**
    - Click on the play button to run the code blocks in the notebook.
+
+9. **Clean up**
+    - Open docker desktop, navigate to *Containers* (on the left side), select container (jupyter_pokemon) and remove it.
