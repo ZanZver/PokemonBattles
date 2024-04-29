@@ -1,1 +1,8 @@
 .DS_Store
+Code/code.ipynb.old
+Code/code3.ipynb
+Code/code2.ipynb
+.ipynb_checkpoints
+*/*.ipynb_checkpoints
+.ga_pokemon_battles
+*/*.ga_pokemon_battles
