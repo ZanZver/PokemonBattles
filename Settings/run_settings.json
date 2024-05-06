@@ -1,35 +1,57 @@
 { 
-    "run_1":
+    "run_1_base":
         {
             "selection_strategy" : "tournament",
-            "tournament_size" : 3,
-            "use_elitism": true,
+            "tournament_size" : 5,
+            "use_elitism": false,
             "ga_configurations" : {
-                    "GA1": {"number_of_generations": 30, "population_size": 40, "cxpb": 0.5, "mutpb": 0.2},
-                    "GA2": {"number_of_generations": 30, "population_size": 50, "cxpb": 0.6, "mutpb": 0.3},
-                    "GA3": {"number_of_generations": 30, "population_size": 60, "cxpb": 0.7, "mutpb": 0.4}
+                    "GA1": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                    "GA2": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                    "GA3": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1}
             }
         },
-    "run_2":
-        {
-            "selection_strategy" : "tournament",
-            "tournament_size" : 3,
-            "use_elitism": true,
-            "ga_configurations" : {
-                    "GA1": {"number_of_generations": 30, "population_size": 4000, "cxpb": 0.5, "mutpb": 0.2},
-                    "GA2": {"number_of_generations": 30, "population_size": 5000, "cxpb": 0.6, "mutpb": 0.3},
-                    "GA3": {"number_of_generations": 30, "population_size": 6000, "cxpb": 0.7, "mutpb": 0.4}
-            }
-        },
-    "run_3":
-        {
-            "selection_strategy" : "tournament",
-            "tournament_size" : 30,
-            "use_elitism": true,
-            "ga_configurations" : {
-                "GA1": {"number_of_generations": 30, "population_size": 4000, "cxpb": 0.5, "mutpb": 0.2},
-                "GA2": {"number_of_generations": 30, "population_size": 5000, "cxpb": 0.6, "mutpb": 0.3},
-                "GA3": {"number_of_generations": 30, "population_size": 6000, "cxpb": 0.7, "mutpb": 0.4}
-            }
+    "run_2_elitism":
+    {
+        "selection_strategy" : "tournament",
+        "tournament_size" : 5,
+        "use_elitism": true,
+        "ga_configurations" : {
+                "GA1": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                "GA2": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                "GA3": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1}
         }
+    },
+    "run_3_roulette":
+    {
+        "selection_strategy" : "roulette",
+        "tournament_size" : 5,
+        "use_elitism": false,
+        "ga_configurations" : {
+                "GA1": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                "GA2": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                "GA3": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1}
+        }
+    },
+    "run_3_rank":
+    {
+        "selection_strategy" : "rank",
+        "tournament_size" : 5,
+        "use_elitism": false,
+        "ga_configurations" : {
+                "GA1": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                "GA2": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                "GA3": {"number_of_generations": 50, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1}
+        }
+    },
+    "run_3_geneation_increase":
+    {
+        "selection_strategy" : "tournament",
+        "tournament_size" : 5,
+        "use_elitism": false,
+        "ga_configurations" : {
+                "GA1": {"number_of_generations": 100, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                "GA2": {"number_of_generations": 100, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1},
+                "GA3": {"number_of_generations": 100, "population_size": 30, "cxpb": 0.95, "mutpb": 0.1}
+        }
+    }
 }
